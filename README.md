@@ -6,7 +6,7 @@ This repository contains a script that can be used to unfollow every instagram u
 Insert your instagram username and password inside the quotes where the variables 'my_username' and 'my_password' are defined. Additionally, make sure the script is being ran on a computer that has been used to sign into your instagram before. This will make it so additional security codes are not necessary to login. Furthermore, make sure multi-factor authentication is turned off on your account
 
 **Step 2: Open a virtual environment**
-Head to your terminal and open a virtual environment in the same folder where you have this script downloaded. If you are unsure how to do this, check out this website: [here](https://python.land/virtual-environments/virtualenv) (it is very simple). Inside the virtual environment, run commands 'pip install selenium' and 'pip install chromedriver-autoinstaller'. 
+Head to your terminal and open a virtual environment in the same folder where you have this script downloaded. If you are unsure how to do this, check out this [website](https://python.land/virtual-environments/virtualenv) (it is very simple). Inside the virtual environment, run commands 'pip install selenium' and 'pip install chromedriver-autoinstaller'. 
 
 **Step 3: Run the Script**
 From here, you should be able to run the script from terminal using 'python unfollow_non-mutuals.py'.
