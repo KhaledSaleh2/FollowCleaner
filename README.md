@@ -1,15 +1,29 @@
-# FollowCleaner
-This repository contains a script that can be used to unfollow every instagram user that does not follow you back (non-mutuals). 
+# FollowCleaner (Instagram)
 
-# How to Use:
-**Step 1: Enter your login info**
-Insert your instagram username and password inside the quotes where the variables 'my_username' and 'my_password' are defined. Additionally, make sure the script is being ran on a computer that has been used to sign into your instagram before. This will make it so additional security codes are not necessary to login. Furthermore, make sure multi-factor authentication is turned off on your account
+**FollowCleaner** is a Python script designed to automatically unfollow Instagram accounts that do not follow you back (non-mutuals). 
 
-**Step 2: Open a virtual environment**
-Head to your terminal and open a virtual environment in the same folder where you have this script downloaded. If you are unsure how to do this, check out this [website](https://python.land/virtual-environments/virtualenv) (it is very simple). Inside the virtual environment, run commands 'pip install selenium' and 'pip install chromedriver-autoinstaller'. 
+## How to Use
 
-**Step 3: Run the Script**
-From here, you should be able to run the script from terminal using 'python unfollow_non-mutuals.py'.
+### Step 1: Enter Your Login Information
+- Update the `my_username` and `my_password` variables in the script with your Instagram username and password. 
+- Ensure that the script is run on a device previously used to log into your Instagram account to avoid additional security checks.
+- Make sure multi-factor authentication (MFA) is disabled for your account before running the script.
 
-**Disclaimer**
-The script does take some time to run, and if you have thousands of followers/following, it could take upwards of 30 minutes to an hour. I recommend running the script while you occupy yourself with some other task. Also, the script will unfollow ALL accounts that do not follow you back, including celebrities, media sources, organizations, etc. If there are certain major accounts that you do not wish to unfollow, I suggest writing them down before running the script so you can refollow them afterwards.
+### Step 2: Set Up a Virtual Environment
+- Open a terminal and create a virtual environment in the folder where this script is located. [Learn how to set up a virtual environment.](https://python.land/virtual-environments/virtualenv)
+- Inside the virtual environment, install the required dependencies:
+  ```bash
+  pip install selenium
+  pip install chromedriver-autoinstaller
+
+### Step 3: Run the Script
+- Execute the script in your terminal:
+  ```bash
+  python unfollow_non_mutuals.py
+
+## Disclaimer
+- **Runtime**:  
+  The script may take considerable time to complete, especially for accounts with thousands of followers or followings (up to 30 minutes or more). 
+
+- **Important Accounts**:  
+  The script will unfollow **all non-mutuals**, including public figures, organizations, or media accounts. If you want to retain specific accounts, make a list and refollow them manually after running the script.
